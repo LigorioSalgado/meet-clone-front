@@ -1,15 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { ApolloProvider } from "@apollo/react-hooks";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import client from "./graphql";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <Router>
-    <Routes />
-  </Router>,
+  <ApolloProvider client={client}>
+    <Router>
+      <Routes />
+    </Router>
+  </ApolloProvider>,
   document.getElementById("root")
 );
 
