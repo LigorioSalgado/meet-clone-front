@@ -113,8 +113,11 @@ function Home() {
           <div className="row">
               {
                 data.allEvents.map(event => (
-                  <Card title={event.title} author={event.created_by.first_name} 
+                  <Card title={event.title} 
+                    author={event.created_by.first_name} 
                     description={event.description}
+                    id={event._id}
+                    key={event._id}
                   />
                 ))
               }

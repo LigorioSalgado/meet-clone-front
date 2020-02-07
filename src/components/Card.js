@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Card(props) {
   return (
@@ -13,7 +14,7 @@ function Card(props) {
         </a>
         <div className="card-body">
           <h4 className="card-title">
-            <a href="#">{props.title}</a>
+            <Link to={`/event/${props.id}`}>{props.title}</Link>
           </h4>
           <h5>{props.author}</h5>
           <p className="card-text">
