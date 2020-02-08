@@ -8,6 +8,8 @@ import "./index.css";
 import client from "./graphql";
 import * as serviceWorker from "./serviceWorker";
 
+console.log(client)
+
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
