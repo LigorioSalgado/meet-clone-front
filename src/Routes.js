@@ -12,7 +12,7 @@ function Routes(){
             <Route exact path="/" component={Home} /> 
             <Route exact path="/login" component={Login} /> 
             <Route exact path="/event/create" component={EventCreate}/>
-            <Route exact path="/event/:id" component={EventDetail}/>
+            <Route exact path="/events/:id" component={EventDetail}/>
         </> 
     )
 }

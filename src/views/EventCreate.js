@@ -9,7 +9,7 @@ import useForm from '../hooks/useForm';
 const CREATE_EVENT = gql`
 
     mutation addEvent($data:EventAdd!){
-        createNewEvent(data:$data){
+        createEvent(data:$data){
             _id
         }
     }
