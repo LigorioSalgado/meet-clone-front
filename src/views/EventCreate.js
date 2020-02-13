@@ -5,6 +5,7 @@ import Layout from '../common/Layout';
 import Input from '../components/Input';
 import TextArea from '../components/TextArea';
 import useForm from '../hooks/useForm';
+import Authenticated from '../utils/Authenticated';
 
 const CREATE_EVENT = gql`
 
@@ -144,4 +145,4 @@ function EventCreate(props){
 
 }
 
-export default EventCreate;
+export default Authenticated(EventCreate);
