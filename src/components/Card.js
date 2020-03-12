@@ -14,7 +14,7 @@ function Card(props) {
         </a>
         <div className="card-body">
           <h4 className="card-title">
-            <Link to={`/events/${props.id}`}>{props.title}</Link>
+            <Link to={`/events/${props.id}`} className="title-link">{props.title}</Link>
           </h4>
           <h5>{props.author}</h5>
           <p className="card-text">
