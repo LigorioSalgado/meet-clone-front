@@ -45,9 +45,9 @@ class Navbar extends Component {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link className="nav-link" to="/logout">
                       Logout
-                    </a>
+                    </Link>
                   </li>
                 </>
               ) : (
